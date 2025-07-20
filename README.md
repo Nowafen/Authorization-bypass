@@ -1,7 +1,7 @@
 ## Authorization Bypass via Headers (Nuclei Templates)
 ###### Date: July 2025
-###### By MNM
 ###### Reference : [PortSwigger Academy](https://portswigger.net/web-security)
+###### By MNM
 ---
 
 This repository provides 15 Nuclei templates for testing IP-based authorization bypass techniques. The logic is based on observing 401/403 responses and reattempting requests with different IP-related HTTP headers to test access control misconfigurations.
