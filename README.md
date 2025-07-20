@@ -30,9 +30,9 @@ Run Nuclei with one or all templates:
 nuclei -u https://admin.doamin.tld  -t Authorization-bypass/ 
 ```
 
-Or against a list of URLs:
+Recommended test:
 ```bash
-nuclei -l urls.txt -t Authorization-bypass/ -no-httpx
+cat allurls.txt | httpx -mc 401,403 | nuclei -t Authorization-bypass/ -no-httpx
 ```
 
 ---
