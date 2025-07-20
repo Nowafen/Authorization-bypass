@@ -2,6 +2,8 @@
 ###### Date: July 2025
 ###### Reference : [PortSwigger Academy](https://portswigger.net/web-security)
 ###### By MNM
+<img width="900" height="428" alt="Screenshot from 2025-07-21 02-30-51" src="https://github.com/user-attachments/assets/e015e96c-2537-4d46-b6c0-3b867d4292da" />
+
 ---
 
 This repository provides 15 Nuclei templates for testing IP-based authorization bypass techniques. The logic is based on observing 401/403 responses and reattempting requests with different IP-related HTTP headers to test access control misconfigurations.
