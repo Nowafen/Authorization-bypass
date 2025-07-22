@@ -1,7 +1,7 @@
 ## Authorization Bypass via Headers (Nuclei Templates)
 ###### Date: July 2025
 ###### Reference : [PortSwigger Academy](https://portswigger.net/web-security)
-###### Created By MNM | [Contact](https://t.me/GoSecurity)
+###### Created By MNM
 <img width="1200" height="700" alt="Screenshot from 2025-07-21 02-30-51" src="https://github.com/user-attachments/assets/e015e96c-2537-4d46-b6c0-3b867d4292da" />
 
 ---
